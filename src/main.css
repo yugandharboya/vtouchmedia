@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --main-bg-color: #f9fafb;
+  --section-bg-primary: #ffffff;
+  --section-bg-secondary: #f5f5f5;
+
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --text-light: #9ca3af;
+  --footer-text: white;
+  --text-highlight: #6366f1;
+  --text-gradient: linear-gradient(135deg, #7c3aed, #06b6d4);
+
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+
+  --header-height: 72px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding-top: var(--header-height);
+  line-height: 1.5;
+  background-color: var(--main-bg-color);
+}
+
+body::-webkit-scrollbar {
+  width: 2px;
+}
+
+.section-heading {
+  font-size: 62px;
+  font-weight: 800;
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-heading-highlight {
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #7c3aed;
+}
+
+.btn-glow {
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  color: #6366f1;
+  border: 2px solid #6366f1;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #6366f1;
+  color: #ffffff;
+}
+
+.section-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #f8fafc, #eef2ff);
+  color: #2563eb;
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+  border: 1px solid #e7ebfa;
+  font-family: "Space Mono", monospace;
+}
+
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

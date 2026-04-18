@@ -1,0 +1,103 @@
+.social-section {
+  padding: 80px 24px;
+  background-color: var(--section-bg-primary);
+}
+
+.social-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-header {
+  margin-bottom: 40px;
+}
+
+.social-title {
+  font-size: 34px;
+  font-weight: 800;
+  margin: 16px 0;
+}
+
+.social-subtitle {
+  color: #64748b;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #2563eb;
+  background: linear-gradient(to bottom, #f8fafc, #eef2ff);
+  border: 1px solid #e7ebfa;
+
+  box-shadow: 0px 10px 25px rgba(79, 70, 229, 0.3);
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.social-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  opacity: 0;
+  transition: 0.35s;
+}
+
+.social-btn:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+  color: white;
+}
+.social-btn:hover::before {
+  opacity: 1;
+}
+
+.social-btn:hover .social-icon {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.social-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+.instagram {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.youtube {
+  background: linear-gradient(45deg, #ff0000, #ff4d4d) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.facebook {
+  background: linear-gradient(45deg, #1877f2, #4facfe) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.twitter {
+  background: linear-gradient(45deg, #000000, #434343) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

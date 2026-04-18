@@ -1,0 +1,86 @@
+.about-section {
+  padding: 80px 20px;
+  background: var(--section-bg-primary);
+  text-align: center;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+.office-image {
+  height: 400px;
+}
+
+.about-section h2 {
+  margin-bottom: 35px;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 25px;
+}
+
+.about-points {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin: 20px auto 0;
+  list-style-type: none;
+}
+.about-section-tag {
+  font-size: 12px;
+  letter-spacing: 1px;
+  background: #eef2ff;
+}
+
+.about-points-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  max-width: 400px;
+  padding: 12px 15px;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  border-radius: 10px;
+  .about-points-item {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+}
+.about-point-text {
+  color: var(--text-secondary);
+}
+.tick-icon {
+  background-color: #ffffff;
+  color: var(--text-highlight);
+  border-radius: 40%;
+}
+
+.about-points-item:hover {
+  transform: translateY(-5px);
+}
+.highlight-name {
+  color: var(--text-highlight);
+  font-weight: 700;
+}
+
+@media (min-width: 600px) {
+  .about-container {
+    flex-direction: row;
+  }
+  .about-points {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

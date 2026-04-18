@@ -1,0 +1,53 @@
+.service-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px 24px;
+  transition: 0.4s;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  height: 100%;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: rgba(124, 58, 237, 0.1);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.service-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--text-highlight);
+
+  stroke-width: 2;
+  fill: none;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon svg {
+  transform: scale(1.15);
+}
+
+.service-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.service-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

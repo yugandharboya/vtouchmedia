@@ -1,0 +1,26 @@
+.portfolio-section {
+  padding: 80px 24px;
+  background: var(--section-bg-primary);
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.portfolio-subtitle {
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.6;
+  margin: auto;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
