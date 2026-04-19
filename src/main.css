@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
 }
 
 .section-heading {
-  font-size: 62px;
+  font-size: 50px;
   font-weight: 800;
   background: var(--text-gradient);
   -webkit-background-clip: text;

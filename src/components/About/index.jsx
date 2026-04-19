@@ -29,7 +29,7 @@ const About = () => {
       <div className="about-container">
         <div>
           <div className="section-tag ">ABOUT US</div>
-          <h2 className="section-heading ">
+          <h2 className="section-heading">
             We Help{" "}
             <span className="section-heading-highlight">
               Brands Grow Digitally

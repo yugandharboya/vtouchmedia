@@ -4,7 +4,7 @@ import heroImage from "../../assets/hero.png";
 const stats = [
   { number: "150+", label: "Projects Done" },
   { number: "50+", label: "Happy Clients" },
-  { number: "5+", label: "Years Experience" },
+  { number: "3+", label: "Years Experience" },
 ];
 
 const Hero = () => {

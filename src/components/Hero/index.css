@@ -16,6 +16,9 @@
   background: var(--section-bg-primary);
   animation: fadeIn 1s ease-in;
 }
+.hero-title {
+  font-family: 18px;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
